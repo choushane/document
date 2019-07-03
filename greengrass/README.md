@@ -5,8 +5,8 @@
     * Docker 17.05.0-ce, build 89658be
   
   ## 準備下列檔案
-    [Amazon GreenGrass 1.7.1](https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.7.1/greengrass-linux-x86-64-1.7.1.tar.gz)
-    [OpenVINO 2018-05-455](http://registrationcenter-download.intel.com/akdlm/irc_nas/15078/l_openvino_toolkit_p_2018.5.455.tgz)
+    * [ Amazon GreenGrass 1.7.1 ] ( https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.7.1/greengrass-linux-x86-64-1.7.1.tar.gz )
+    * [ OpenVINO 2018-05-455 ] ( http://registrationcenter-download.intel.com/akdlm/irc_nas/15078/l_openvino_toolkit_p_2018.5.455.tgz )
     * supervisor.config
     * sysctl.conf
     * Docker File
