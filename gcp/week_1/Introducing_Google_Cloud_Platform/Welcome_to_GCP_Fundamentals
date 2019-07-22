@@ -1,1 +1,13 @@
-Hi. I'm Brian Rice from the Google Cloud training team. In this course, my colleagues and I are going to introduce you to Google Cloud Platform. GCP offers four main kinds of services: compute, storage, big data and machine learning. This course focuses mostly on the first two together with the topic of networking. After all, you can't use resources in the Cloud without Cloud Networking. The Cloud is a great home for your applications and your data because using it frees you from a lot of overhead chores. And the Google Cloud gives you reasonably priced access to the same planet-scale infrastructure that Google runs on. What exactly is Google Cloud Platform? How is it organized? And what makes it unique? In this module, we will orient you to the basics.
+簡介
+GCP -google cloud platform 
+
+GCP 提供四種主要服務 
+  1. 計算 ( compute )
+  2. 儲存 ( storage )
+  3. 大數據 ( big data )
+  4. 機械學習 ( machine learning )
+  
+課程主要在前兩部份（計算 儲存）與網路相關主題。
+
+雲端處理應用程式與數據資料的好地方，他讓你免除一些大量的開銷。
+
