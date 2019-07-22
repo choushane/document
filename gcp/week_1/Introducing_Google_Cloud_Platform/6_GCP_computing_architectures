@@ -1,0 +1,38 @@
+GCP 雲端計算架構
+
+虛擬化數據中心主要為
+ 1. IaaS (Infrastructure as a Service)
+    提供消費者處理、儲存、網路以及各種基礎運算資源，以部署與執行作業系統或應用程式等各種軟體。
+    Amazon EC2
+    OpenStack
+    
+ 2. PaaS （Platform as a Service）
+    一種雲端運算服務，提供運算平台與解決方案服務。在雲端運算的典型層級中，PaaS層介於軟體即服務與基礎設施即服務之間。
+    Heroku
+    Google App Engine
+    OpenShift
+    Google App Engine,Microsoft Azure，Force.com,Heroku，Engine Yard
+    
+ *1. SaaS (Softwave as a Service)
+    有時被作為「即需即用軟體」（即「一經要求，即可使用」）提及，它是一種軟體交付模式。 在這種交付模式中雲端集中式代管軟體及其相關的資料，軟體僅需透過網際網路，而不須透過安裝即可使用。
+    iCloud
+    Google Apps
+    Salesforce.com
+    Office 365
+    Netflix, MOG, Google Apps, Box.net, Dropbox
+    Search, Gmail, Docs
+    
+  *2. DaaS (Data as a Service)
+    客戶需求構建一個DaaS平臺，其中所涉及的元素主要包括：
+    資料採集(Data acquisition)：來自於任何資料來源，如資料倉庫、電子郵件、門戶、第三方資料來源等。
+    資料治理與標準化：手動或者自動整理資料標準。
+    資料聚合：這個有很強的服務與技術驅動的質量控制機制，不是簡單地寫100個ETL程式。
+    資料服務：通過web服務、抽取和報表等，讓終端使用者能夠更容易地消費資料。
+    
+  *3. DbaaS (Database as a Service)
+    Amazon Relational Database Service
+    Amazon Aurora, MySQL based service
+    Google Cloud SQL
+
+在IaaS 你要為你所’創建’的付費，　在PaaS 你要為你所’使用’的付費，　不管哪一種都還是比傳統方式的方式節省。
+隨著雲端的發展，都朝向了託管基礎架構與服務的方向走。
