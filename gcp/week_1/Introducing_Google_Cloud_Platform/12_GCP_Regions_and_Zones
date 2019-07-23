@@ -1,0 +1,5 @@
+Why might a GCP customer use resources in several zones within a region?
+   For improved fault tolerance
+ 
+Why might a GCP customer use resources in several regions around the world?
+ To bring their applications closer to users around the world, and for improved fault tolerance
