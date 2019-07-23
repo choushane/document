@@ -1,0 +1,24 @@
+創新的定價模式
+
+ GCP 提供各式各樣的省錢方法。
+ Google 是第一個提供以秒計費的供應商，而不是利用四捨五入把虛擬機的時間單位進位到更大的時間單位。
+ 或許這不是什麼了不起的事，但對於正在新建或是執行大量虛擬機的客戶而言，以四捨五入算方式確實可以累積起來。
+ 
+ 後續得課程中將會說明以秒計費的服務，像是Compute Engine。
+ 
+  Kubernetes engine -  Container Infrastructure as a Service
+  Cloud Dataproc  - 大數據（bid data）開源系統 Hadoop as a Service
+  App Engine's Flexible Environment - Platform as a Service
+  
+  
+  Compute Engine 在一個月內長時間運行時會自動給予折扣。
+
+  舉例來說： 當虛擬機運行超過1/4個月時，  Compute Engine會對接下來的每分鐘給予優惠。
+  
+  這是一種省錢的方式之一。
+  
+  後面的課程將會讓你了解如何設定虛擬機，如何指定更使用多少記憶體或CPU。
+  
+  一般來說你可以在預先配置好的虛擬機中挑選，也可以自行定義虛擬機配置，自行決定大小。
+  這樣您就可以了解所需要的費用。
+ 
