@@ -1,0 +1,19 @@
+開放API
+
+有些人害怕使用雲端服務，他們擔心會被侷限在單一雲端供應商。
+Google能避免這類情形發生在顧客身上,做了下列處理
+ 
+GCP服務兼容開放式專案，例如：
+Cloud Bigtable - 使用Apache HBase 開源數據庫接口，讓使用者可以提供移植。
+
+Cloud Dataproc - 使用Hadoop開源大數據環境來管理服務。
+
+Google publishes key - 使用開源憑證系統來發佈，為客戶提供Google以外的選擇。
+
+TensorFlow - Google 內部開發用於機器學習的開源軟體庫。
+
+許多GCP技術提供相互溝通的操作方式。
+
+Kubernetes 讓客戶可以混合和匹配跨不同雲端進行運作
+
+Stackdriver 讓客戶可以同時監控多個雲端服務商的工作負載情況
