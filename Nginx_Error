@@ -1,0 +1,4 @@
+Q : error while loading shared libraries: libgd.so.2: cannot open shared object
+
+A : install gd 
+    CentOS 7 : yum install -y gd
