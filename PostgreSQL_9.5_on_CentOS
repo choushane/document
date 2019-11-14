@@ -1,0 +1,41 @@
+Adding PostgreSQL Yum Repository
+
+  rpm -Uvh https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-3.noarch.rpm
+
+Installing PostgreSQL Server
+
+    yum install -y postgresql95-server postgresql95
+    
+Initializing PGDATA
+
+    /usr/pgsql-9.5/bin/postgresql95-setup initdb
+    
+PostgresSQL Import Database
+
+    #Change user
+    su -u postgres
+    
+    #import
+    psql {database} < db.sql
+    
+PostgresSQL Create Database
+    #Login
+    psql
+
+    \password ******
+    
+PostgresSQL Used info    
+
+  show database : \l
+
+  select database : \c {database name}
+
+  show table from selected database : \dt 
+    
+  show table struct : \d {table name}
+  
+  show data from table : select * from {table name } limit {number};
+  
+  show codec  : \encoding
+  
+  exit : \q
