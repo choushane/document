@@ -1,0 +1,26 @@
+Need Tools
+CMkae > 3.10 
+*Update to 3.12
+   Download CMake 3.12 : https://cmake.org/files/v3.12/cmake-3.12.1.tar.gz
+   (CMake https://cmake.org/download/ )
+   Build CMake :
+```
+    tar -xvf cmake-3.12.1.tar.gz
+    cd cmake-3.12.1
+    cmake .
+    make -j8
+    sudo make install
+```
+   Update File System:
+     sudo update-alternatives --install /usr/bin/cmake cmake /usr/local/bin/cmake 1 --force   
+     
+   Check Version:
+      cmake --version    
+    
+    
+    
+Build :     
+  mkdir build
+  cd build 
+  cmake .. -DLINPHONESDK_PLATFORM=Android
+  cmake --build .
