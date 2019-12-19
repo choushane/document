@@ -18,6 +18,6 @@
             name = env->CallObjectMethod(info, env->GetMethodID(env->FindClass("android/media/MediaCodecInfo"), "getName", "()Ljava/lang/String;"));
             name_len = env->GetStringUTFLength((jstring)name);
             name_ptr = env->GetStringUTFChars((jstring)name, NULL);
-            ms_message( "show -----------SHNAE -----------using %.*s", name_len, name_ptr);
+            ms_message( "show ----------------------using %.*s", name_len, name_ptr);
 
         }
