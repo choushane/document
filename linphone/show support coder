@@ -1,0 +1,23 @@
+ #mediastreamer2/src/android/android_mediacodec.cpp p.175
+ 
+        int num_codecs;
+        jobject info = NULL;
+        jobject name = NULL;
+        const char *name_ptr = NULL;
+        jsize name_len = 0;
+        jclass mediaCodecClassList = NULL;
+
+        mediaCodecClassList = env->FindClass("android/media/MediaCodecList");
+
+        num_codecs = env->CallStaticIntMethod(mediaCodecClassList, env->GetStaticMethodID(mediaCodecClassList, "getCodecCount", "()I"));
+
+        for (int i = 0; i < (int)num_codecs; i++){
+            info = env->CallStaticObjectMethod(mediaCodecClassList,
+                                              env->GetStaticMethodID(mediaCodecClassList, "getCodecInfoAt", "(I)Landroid/media/MediaCodecInfo;"), i);
+
+            name = env->CallObjectMethod(info, env->GetMethodID(env->FindClass("android/media/MediaCodecInfo"), "getName", "()Ljava/lang/String;"));
+            name_len = env->GetStringUTFLength((jstring)name);
+            name_ptr = env->GetStringUTFChars((jstring)name, NULL);
+            ms_message( "show -----------SHNAE -----------using %.*s", name_len, name_ptr);
+
+        }
