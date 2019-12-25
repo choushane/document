@@ -1,0 +1,43 @@
+1.　Linphone SDK 中缺乏rockchip硬體資訊，造成進行解碼器設定時缺少了一些步驟。
+
+　　解決方案：增加rockchip硬體資訊。
+
+　　修改檔案：linphone-sdk   –    mediastreamer2/src/voip/h26x/media-codec-h264-decoder.cpp
+
+　　205 行
+
+　　　const std::vector<const MediaCodecH264Decoder::DeviceInfo> MediaCodecH264Decoder::_tvDevices =
+    { 　　　　
+        {"Amlogic", "Quad-Core Enjoy TV Box", "gxl"},
+　　+　　　{"XXX", "XXX", "XXX"},
+　　　　　{"rockchip", "X9-LX", "rk3288"}
+　　　};
+
+　　參考資料：
+
+　　https://github.com/BelledonneCommunications/linphone-android/issues/773
+
+ 
+
+2.　rockchip rk3368 硬體解碼器效能問題，在解碼1280x720(720P) 以上解析度時過慢，會造成解碼器Queue 阻塞，
+
+　　而RTP標準協定會根據當下的流量進行影像優化(網路好：提高解析度或偵數;網路差：降低解析度或偵數)，無法強制指定使用解析度。
+
+　　解決方案：因RTP協定關係，所以採用限制上傳與下載的流量在640x480 以下的範圍。
+
+ 
+
+ 　　修改檔案：linphone-android-app    –  app/src/main/res/raw/linphonerc_default
+
+         [net]
+         #Because dynamic bitrate adaption can increase bitrate, we must allow "no limit"
+        download_bw=300
+        upload_bw=300
+
+ 
+
+　　參考資料：
+
+　　https://lists.nongnu.org/archive/html/linphone-users/2016-03/msg00098.html
+
+　　https://github.com/BelledonneCommunications/linphone-iphone/issues/345
