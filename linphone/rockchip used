@@ -17,7 +17,8 @@
 
 　　https://github.com/BelledonneCommunications/linphone-android/issues/773
 
- 
+    *在debug 訊息中可取得裝置資訊
+    org.linphone.debug I/Linphone: MediaCodecH264Decoder: got device info: { 'xxxx', 'xxxx', 'rk3399' }
 
 2.　rockchip rk3368 硬體解碼器效能問題，在解碼1280x720(720P) 以上解析度時過慢，會造成解碼器Queue 阻塞，
 
